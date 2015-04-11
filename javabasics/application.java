@@ -4,17 +4,20 @@ package javabasics;
  *  Main Testing Program for Java Basics.
  */
  
-public class application {
+public class Application {
  
     // Main Program
     public static void main (String[] args){
-        // Variables
-        String helloVar = "Ahh Hello! Welcome to Hades!";   // String Var for the "helloWorld" class.
- 
+        // Setters
+        String helloVar = "Ahh Hello! Welcome to Hades!";   // String Var for the "HelloWorld" class.
+
         // HelloWorld!
-        helloWorld.printHelloWorld(helloVar);               // helloWorld class call.
- 
+        HelloWorld.printHelloWorld(helloVar);               // HelloWorld class print call.
+
         // Variables!
-        variables.varPrint();
+        Variables.varPrint();                               // Variables class print call.
+
+        // Strings!
+        Strings.strPrint();
     }
 }
