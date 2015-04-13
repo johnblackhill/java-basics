@@ -1,5 +1,5 @@
 package javabasics;
- 
+
 /**
  *  Main Testing Program for Java Basics.
  */
@@ -12,12 +12,15 @@ public class Application {
         String helloVar = "Ahh Hello! Welcome to Hades!";   // String Var for the "HelloWorld" class.
 
         // HelloWorld!
-        HelloWorld.printHelloWorld(helloVar);               // HelloWorld class print call.
+        HelloWorld.printHelloWorld(helloVar);               // HelloWorld class print.
 
         // Variables!
-        Variables.varPrint();                               // Variables class print call.
+        Variables.varPrint();                               // Variables class print.
 
         // Strings!
-        Strings.strPrint();
+        Strings.strPrint();                                 // Strings class call.
+
+        // Basic Structures!
+        // BasicStructures.bstruct_Tests();                 // Unfinished code. Commented for clean commit.
     }
 }

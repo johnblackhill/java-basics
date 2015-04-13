@@ -15,7 +15,7 @@ public class Variables {
 
         /*                                                                                              /
         /   Variables refer to a previously declared type in the main core of the JAVA language.        /
-        /   By convention, variable names start with no capital letters                                 /
+        /   By convention, variable names do not start with capital letters, but new classes do.        /
         /   If we create a new type or subtype, it should (by convention) start with Capital Letters    /
         /                                                                                              */
  
