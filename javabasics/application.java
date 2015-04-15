@@ -21,6 +21,6 @@ public class Application {
         Strings.strPrint();                                 // Strings class call.
 
         // Basic Structures!
-        // BasicStructures.bstruct_Tests();                 // Unfinished code. Commented for clean commit.
+        BasicStructures.bstruct_Tests();                    // Class that showcases Basic Structures usages.
     }
 }

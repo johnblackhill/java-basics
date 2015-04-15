@@ -10,68 +10,110 @@ import java.util.Scanner;                       // We need to import this Java c
 public class BasicStructures {
     public static void bstruct_Tests () {
         // Variables
-        String inStr = "";
         int inInt = 0;
-        int wl = 0;
+        int loopVar = 0;
 
         //// Main Input Block ////
 
         // Create Scanner Object
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);                             // We need this to use Java's Input Module.
 
         // Prompt lines
         System.out.println("Select an Option to test Basic Structures: ");
         System.out.println("1. While Structure.");
         System.out.println("2. For Structure.");
-        System.out.println("3. If Structure.");
-        System.out.println("4. Do-While Structure.");
+        System.out.println("3. Do-While Structure.");
+        System.out.println("4. If Structure.");
 
         // Scan for user input
         int opt = input.nextInt();              // We have many input methods so we can use all kinds of types.
                                                 // 'int Variable = input.nextInt()' Works for Integers.
                                                 // 'double Variable = input.nextDouble()' Works for Doubles.
                                                 // 'String Variable = input.nextLine()' Works for Strings.
-        /* switch (opt){
-            default
-        } */
+        switch (opt){
 
-        // While Structure. //
-        System.out.println("We will print in screen numbers from zero to your given number");
-        while (wl <= 5) {                       // This will print "0 1 2 3 4 5"
-            // Value Print
-            System.out.println("The value of the While Variable is: " + wl);
+            case 1:
+                System.out.println("Give me a number between 0 and 5");
+                inInt = input.nextInt();
+                while ((inInt < 0) || (inInt > 5)) {
+                    System.out.println("Only Between 0 and 5");
+                    inInt = input.nextInt();
+                }
+                // While Structure. //
+                System.out.println("We will print in screen numbers from zero to your given number");
+                while (loopVar <= inInt) {                       // This will print "0 1 2 3 4 5"
+                    // Value Print
+                    System.out.println("The value of the While Variable is: " + loopVar);
 
-            wl++;                               // This equals "wa = wa +1".
+                    loopVar++;                               // This equals "wa = wa +1".
+                }
+                break;
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            case 2:
+                System.out.println("Give me a number between 0 and 5");
+                inInt = input.nextInt();
+                while ((inInt < 0) || (inInt > 5)) {
+                    System.out.println("Only Between 0 and 5");
+                    inInt = input.nextInt();
+                }
+                System.out.println("We will print in screen numbers from your given number to zero.");
+                // For Structure. //
+                for (loopVar = inInt;loopVar>=0;loopVar--) {
+                                                        // a "for" structure has three parts: a;b;c
+                                                        // 'a': code ; 'b': loop condition ; 'c': post-loop operation.
+
+                    // Value Print
+                    System.out.println("The value of the For Variable is: " + loopVar);
+                }
+                break;
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            case 3:
+                ////////////////////// Do-While Structure. //////////////////////
+                System.out.println("Give me a number between 0 and 5");
+                inInt = input.nextInt();
+                while ((inInt < 0) || (inInt > 5)) {
+                    System.out.println("Only Between 0 and 5");
+                    inInt = input.nextInt();
+                }
+
+                loopVar = 0;
+                System.out.println("We are going to multiply your N number N times!");
+                int mult = 0;
+                do {
+                    mult = mult + inInt;
+                    System.out.println("Multiplication result is: " + mult);
+                    loopVar++;
+                }
+                while (loopVar != inInt);
+                break;
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            case 4:
+                input.nextLine();                           // We MUST ALWAYS call a nextLine after an Integer input.
+
+                System.out.println("Give me a String: ");
+                String inStr = input.nextLine();
+                String isSpace = " ";
+
+                ////////////////////// If Structure. //////////////////////
+                if ((inStr.isEmpty()) || (inStr.equals(" "))) {
+                    // JAVA usually needs library operations to operate with Strings, instead of
+                    // using arithmetical or logical operations like "==" or "||"
+
+                    // Value Print
+                    System.out.println("inStr is null or empty");
+                }
+                else {
+                    System.out.println("inString reads: '" + inStr + "'");
+                }
+                break;
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                default:
+                    System.out.println("Invalid Option.");
         }
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        // For Structure. //
-        for (int fl=5;fl>=0;fl--) {             // a "for" structure has three parts: a;b;c
-                                                // 'a': code ; 'b': loop condition ; 'c': post-loop operation.
-            // Value Print
-            System.out.println("The value of the For Variable is: " + fl);
-        }
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        // Do-While Structure. //
-        int mult = 0;
-        do {
-
-        }
-        while (inInt != 5);
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        // If Structure.
-        if ((inStr == "") || (inStr == " ")) {              // We can evaluate different things at the same time.
-                                                            // If logical ops: || (or), && (and)
-                                                            // An If can evaluates logical expressions (like 4<6).
-            // Value Print
-            System.out.println("inStr is null or empty");
-        }
-        else {
-            System.out.println("inString reads: '" + inStr + "'");
-        }
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     }
 }
