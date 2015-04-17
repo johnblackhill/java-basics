@@ -1,5 +1,9 @@
 package javabasics;
- 
+
+    /*///////////////////////////////////////////////////////////////////////////////////////////
+    /      This Class showcases the use of Strings, as well as Basic Operations with them.      /
+    ///////////////////////////////////////////////////////////////////////////////////////////*/
+
 public class Strings {
     public static void strPrint(){
         // String Variables.
@@ -20,5 +24,6 @@ public class Strings {
         System.out.println("This is a Double: " + d_int + ".");                 // Concatenating Strings & Vars #2
 
         System.out.println();                                                   // Separation Line
+        WaitForKey.call();                                                      // Wait for Enter Key
     }
 }
