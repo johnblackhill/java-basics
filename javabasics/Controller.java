@@ -24,28 +24,29 @@ public class Controller {
             System.out.println(" - 'Strings'            - Showcases different operations with Strings.");
             System.out.println(" - 'BasicStructures'    - Showcases the use of different Control Structures.");
             System.out.println(" - 'Arrays'             - Showcases different operations with Arrays.");
+            System.out.println(" - 'Exit'               - Exits Program.");
             System.out.println();  /////////////////////////////////////////// Separation Line
             String opt = input.nextLine();                                  // Get the User Input.
             switch (opt) {
                 case "StringPrint":
-                    HelloWorld.printHelloWorld();
+                    HelloWorld.showcase();
                     break;
 
                 case "Variables":
-                    Variables.varPrint();
+                    Variables.showcase();
                     break;
 
                 case "Strings":
-                    Strings.strPrint();
+                    Strings.showcase();
                     break;
 
                 case "BasicStructures":
-                    BasicStructures.bstruct_Tests();
+                    BasicStructures.showcase();
                     System.out.println(); /////////////////////////////////// Separation Line
                     break;
 
                 case "Arrays":
-                    System.out.println("Not fully implemented. Choose another option!");
+                    Arrays.showcase();
                     System.out.println(); /////////////////////////////////// Separation Line
                     break;
 

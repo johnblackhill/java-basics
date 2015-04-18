@@ -6,7 +6,7 @@ import java.util.Scanner;
     ///////////////////////////////////////////////////////////////////////////////////////////*/
 
 public class HelloWorld {
-    public static void printHelloWorld (){
+    public static void showcase (){
         Scanner input = new Scanner(System.in);
 
         System.out.println("Give me a String: ");

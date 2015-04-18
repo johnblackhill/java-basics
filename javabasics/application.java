@@ -8,6 +8,6 @@ public class Application {
  
     // Main Program
     public static void main (String[] args){
-        Controller.mainController();
+        Controller.mainController();                // We call the main Controller class.
     }
 }

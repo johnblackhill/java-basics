@@ -1,7 +1,7 @@
 package javabasics;
  
 public class Variables {
-    public static void varPrint () {
+    public static void showcase () {
         // Variables
         int myInteger = 0;                                  // Integer Variable.
         short myShort = 246;                                // Short Integer Variable.

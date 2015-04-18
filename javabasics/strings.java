@@ -5,7 +5,7 @@ package javabasics;
     ///////////////////////////////////////////////////////////////////////////////////////////*/
 
 public class Strings {
-    public static void strPrint(){
+    public static void showcase(){
         // String Variables.
         String text = "This is a name:";            // "text" refers to a previously declared String class.
                                                     // "String" is not a basic type, so it starts with Capital Letters.

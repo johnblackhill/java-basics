@@ -8,7 +8,7 @@ import java.util.Scanner;                       // We need to import this Java c
     ///////////////////////////////////////////////////////////////////////////////////////////*/
 
 public class BasicStructures {
-    public static int bstruct_Tests () {
+    public static int showcase () {
         // Variables
         int inInt = 0;
         int loopVar = 0;
